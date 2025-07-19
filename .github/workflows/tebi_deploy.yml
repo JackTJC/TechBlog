@@ -40,6 +40,14 @@ jobs:
       - name: Generate static files
         run: hexo generate
 
+      # 新增的调试步骤
+      - name: Debug Secrets
+        run: |
+          echo "Access Key ID Is Set: ${{ secrets.HEXO_DEPLOY_ACCESS_KEY_ID != '' }}"
+          echo "Access Key ID length: ${{ env.HEXO_DEPLOY_ACCESS_KEY_ID_LEN }}"
+        env:
+          HEXO_DEPLOY_ACCESS_KEY_ID_LEN: ${{ secrets.HEXO_DEPLOY_ACCESS_KEY_ID && 'set' || 'not-set' }}
+
       # 步骤 5: 部署到 S3
       - name: Deploy to S3
         run: hexo deploy
