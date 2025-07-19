@@ -62,7 +62,7 @@ theme: icarus
 deploy:
   type: s3
   bucket: tech.tianjincai.top
-  aws_key: 98zrrAdUki12pVcG
-  aws_secret: AqHFv8DjXjYNS8X7CXKab0wzUzeofv5E9mwT1OE6
+  aws_key: ${process.env.HEXO_DEPLOY_ACCESS_KEY_ID}
+  aws_secret: ${process.env.HEXO_DEPLOY_SECRET_ACCESS_KEY}
   endpoint: https://s3.tebi.io
   # region: sg
