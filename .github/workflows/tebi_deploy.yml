@@ -40,20 +40,18 @@ jobs:
       - name: Generate static files
         run: hexo generate
 
-      # 新增的调试步骤
-      - name: Debug Secrets
+      # 新增的调试步骤：打印 Secrets 的长度
+      - name: Debug Secret Lengths
         run: |
-          echo "Access Key ID Is Set: ${{ secrets.HEXO_DEPLOY_ACCESS_KEY_ID != '' }}"
-          echo "Access Key ID length: ${{ env.HEXO_DEPLOY_ACCESS_KEY_ID_LEN }}"
+          echo "Access Key ID Length: ${#HEXO_DEPLOY_ACCESS_KEY_ID}"
+          echo "Secret Access Key Length: ${#HEXO_DEPLOY_SECRET_ACCESS_KEY}"
         env:
-          HEXO_DEPLOY_ACCESS_KEY_ID_LEN: ${{ secrets.HEXO_DEPLOY_ACCESS_KEY_ID && 'set' || 'not-set' }}
-
+          # 将 secrets 映射到环境变量，以便在 run 脚本中使用
+          HEXO_DEPLOY_ACCESS_KEY_ID: ${{ secrets.HEXO_DEPLOY_ACCESS_KEY_ID }}
+          HEXO_DEPLOY_SECRET_ACCESS_KEY: ${{ secrets.HEXO_DEPLOY_SECRET_ACCESS_KEY }}
       # 步骤 5: 部署到 S3
       - name: Deploy to S3
-        run: |
-          hexo deploy
-          echo ${HEXO_DEPLOY_ACCESS_KEY_ID}
-          echo ${HEXO_DEPLOY_SECRET_ACCESS_KEY}
+        run: hexo deploy
         env:
           # 将 GitHub Secrets 注入到环境变量中
           HEXO_DEPLOY_ACCESS_KEY_ID: ${{ secrets.HEXO_DEPLOY_ACCESS_KEY_ID }}
