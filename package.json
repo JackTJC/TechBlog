@@ -30,6 +30,6 @@
     "hexo-theme-landscape": "^1.0.0",
     "klaw-sync": "^6.0.0",
     "mime-types": "^2.1.35",
-    "p-limit": "^4.0.0"
+    "p-limit": "^6.2.0"
   }
 }
