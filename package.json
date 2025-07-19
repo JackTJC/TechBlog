@@ -1,0 +1,35 @@
+{
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
+  },
+  "hexo": {
+    "version": "7.3.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.509.0",
+    "@aws-sdk/lib-storage": "^3.509.0",
+    "chalk": "^4.1.2",
+    "hexo": "^7.3.0",
+    "hexo-deployer-ftpsync": "^0.2.0",
+    "hexo-deployer-s3-plus": "^1.0.1",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^7.0.0",
+    "hexo-renderer-stylus": "^3.0.1",
+    "hexo-server": "^3.0.0",
+    "hexo-theme-icarus": "^6.1.1",
+    "hexo-theme-landscape": "^1.0.0",
+    "klaw-sync": "^6.0.0",
+    "mime-types": "^2.1.35",
+    "p-limit": "^4.0.0"
+  }
+}
