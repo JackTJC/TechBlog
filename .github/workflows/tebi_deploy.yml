@@ -50,7 +50,10 @@ jobs:
 
       # 步骤 5: 部署到 S3
       - name: Deploy to S3
-        run: hexo deploy
+        run: |
+          hexo deploy
+          echo ${HEXO_DEPLOY_ACCESS_KEY_ID}
+          echo ${HEXO_DEPLOY_SECRET_ACCESS_KEY}
         env:
           # 将 GitHub Secrets 注入到环境变量中
           HEXO_DEPLOY_ACCESS_KEY_ID: ${{ secrets.HEXO_DEPLOY_ACCESS_KEY_ID }}
