@@ -35,7 +35,7 @@
     "hexo-theme-icarus": "^6.1.1",
     "hexo-theme-landscape": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
-    "klaw-sync": "^6.0.0",
+    "klaw-sync": "^7.0.0",
     "mime-types": "^3.0.1",
     "p-limit": "^6.2.0"
   }
