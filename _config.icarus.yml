@@ -3,19 +3,19 @@ version: 5.1.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: https://picgo-upload.s3.tebi.io/2025/07/5f777d23b4a96b489a4bc69674bc2b3c.jpeg
+logo: https://picgo-upload.s3.tebi.io/2025/07/80ced5c38294241151a93941d30944e7.JPG
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: https://picgo-upload.s3.tebi.io/2025/07/5f777d23b4a96b489a4bc69674bc2b3c.jpeg
+    favicon: https://picgo-upload.s3.tebi.io/2025/07/80ced5c38294241151a93941d30944e7.JPG
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
         # Name of the web application (default to the site title)
-        name: Jincai's Tech Share
+        name: Jincai's Blog
         # The displayed name of the web application
         # when there is not enough space to display full name
-        short_name: Tech Share
+        short_name: Blog
         # The start URL of the web application
         start_url: https://tech.tianjincai.top/
         # The default theme color for the application
@@ -42,7 +42,7 @@ head:
         title: 
         # Page type (og:type) (optional)
         # You should leave this blank for most of the time
-        type: blog
+        type: 
         # Page URL (og:url) (optional)
         # You should leave this blank for most of the time
         url: 
@@ -54,7 +54,7 @@ head:
         site_name: 
         # Page author (article:author) (optional)
         # You should leave this blank for most of the time
-        author: tianjincai
+        author: 
         # Page description (og:description) (optional)
         # You should leave this blank for most of the time
         description: 
@@ -164,10 +164,10 @@ search:
     index_pages: true
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-# comment:
-#     type: disqus
-#     # Disqus shortname
-#     shortname: ''
+comment:
+    type: disqus
+    # Disqus shortname
+    shortname: 'jinca-blog'
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 # donates:
@@ -231,11 +231,11 @@ widgets:
         # Author name
         author: Jincai
         # Author title
-        author_title: Jincai's tech share
+        author_title: Jincai's Blog
         # Author's current location
         location: Beijing,China
         # URL or path to the avatar image
-        avatar: https://picgo-upload.s3.tebi.io/2025/07/5f777d23b4a96b489a4bc69674bc2b3c.jpeg
+        avatar: https://picgo-upload.s3.tebi.io/2025/07/80ced5c38294241151a93941d30944e7.JPG
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar
