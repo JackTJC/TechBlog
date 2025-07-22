@@ -1,5 +1,6 @@
 ---
 title: about
+abbrlink: b5f422e3
 date: 2025-07-19 16:58:57
 tags:
 ---
@@ -27,4 +28,4 @@ tags:
 
 ### 📫 与我取得联系
 
-- Email: tianjincai@hotmail.com
+- Email: me@tianjincai.top
