@@ -248,8 +248,8 @@ widgets:
                 icon: fab fa-github
                 url: https://github.com/JackTJC
             Facebook:
-                icon: fab fa-facebook
-                url: https://facebook.com
+                icon: fa-brands fa-bilibili
+                url: https://space.bilibili.com/370482608
             Twitter:
                 icon: fab fa-twitter
                 url: https://twitter.com
